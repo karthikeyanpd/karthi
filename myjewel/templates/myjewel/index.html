@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaansar Gold</title>
+    {% load static %}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <style>
+        body {
+    background-image: url("{% static 'images/bg.png' %}");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+    </style>
+ 
+    
+</head>
+
+<body class="bg">
+    <section>
+        <div class="today">
+            <div style="width: 400px; text-align: center;">Today Price</div>
+            <div>
+                <marquee>22 K - Gold 1gram = Rs.7940 | Silver 1gram = Rs.105</marquee>
+            </div>
+
+    </section>
+    <header>
+        <div class="main1">
+            <ul class="main">
+                <li>
+                    <h2><a href="#Home">KAANSAR GOLD</a></h2>
+                </li>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#gold">Gold</a></li>
+                <li><a href="#silver">Silver</a></li>
+                <li><a href="#diamond">Diamond</a></li>
+                <li><a href="#contact">Contact us</a></li>
+            </ul>
+        </div>
+        <!-- <div class="dropdown">
+            <span>Mouse over me</span>
+            <div class="dropdown-content">
+            <p>Hello World!</p>
+            </div>
+          </div> -->
+    </header>
+    <section id="Home">
+        <div class="home0">
+            <!-- <img src="home.png" width="100%"> -->
+            <img src="{% static 'images/home.png' %}" width="100%">
+        </div><br><br>
+        <div class="slider" id="main">
+            <div class="slides">
+                <div class="slide"><img src="{% static 'images/slide1.webp' %}" alt="Image 1"></div>
+                <div class="slide"><img src="{% static 'images/slide2.webp' %}" alt="Image"></div>
+                <div class="slide"><img src="{% static 'images/slide3.webp' %}" alt="Image"></div>
+                <div class="slide"><img src="{% static 'images/slide4.webp' %}" alt="Image"></div>
+                <div class="slide"><img src="{% static 'images/slide5.webp' %}" alt="Image"></div>
+                <div class="slide"><img src="{% static 'images/slide6.webp' %}" alt="Image"></div>
+            </div>
+            <button class="prev" id="button1" onclick="prevSlide()">&#10094;</button>
+            <button class="next" id="button1" onclick="nextSlide()">&#10095;</button>
+        </div>
+    </section>
+    <section>
+        <div class="coll">
+            <div class="coll1">
+                <div>
+                    <img src="{% static 'images/kerala.jpg' %}" class="hop" style="width: 350px;height: 300px;">
+                </div>
+                <div>
+                    <img src="{% static 'images/karnataka.png' %}" class="hop" style="width: 350px;height: 300px;">
+                </div>
+            </div>
+            <div class="coll3"><img src="{% static 'images/center.png' %}" class="hop" style="width: 350px;height: 600px;"></div>
+            <div class="coll2">
+                <div>
+                    <img src="{% static 'images/north.png' %}" class="hop" style="width: 350px;height: 300px;">
+                </div>
+                <div>
+                    <img src="{% static 'images/tamil.png' %}" class="hop" style="width: 350px;height: 300px;">
+                </div>
+            </div>
+        </div>
+    </section><br><br><br>
+    <section id="gold"><br>
+        <center>
+            <h1>Gold</h1>
+        </center>
+        <div class="item">
+
+            <div>
+                <img src="{% static 'images/gold1.webp' %}" class="itemimg" alt="img">
+                <center>
+                    <div>
+                        <h3>Gold Earings</h3>
+                    </div>
+                </center>
+            </div>
+            <div>
+                <img src="{% static 'images/gold2.webp' %}" class="itemimg" alt="img">
+                <center>
+                    <div>
+                        <h3>Trendy Rings</h3>
+                    </div>
+                </center>
+            </div>
+            <div>
+                <img src="{% static 'images/gold3.webp' %}" class="itemimg" alt="img">
+                <center>
+                    <div>
+                        <h3>Gold Custmize Earings</h3>
+                    </div>
+                </center>
+            </div>
+            <div>
+                <img src="{% static 'images/gold4.webp' %}" class="itemimg" alt="img">
+                <center>
+                    <div>
+                        <h3>Gold Bangles</h3>
+                    </div>
+                </center>
+            </div>
+            <div>
+                <img src="{% static 'images/gold5.webp' %}" class="itemimg" alt="img">
+                <center>
+                    <div>
+                        <h3>Gold Necklace</h3>
+                    </div>
+                </center>
+            </div>
+        </div>
+    </section><br><br><br>
+    <section id="silver"><br>
+        <center>
+            <h1>Silver</h1>
+        </center>
+        <div class="item">
+
+            <div>
+                <img src="{% static 'images/silver1.png' %}" class="itemimg" alt="img">
+                <center>
+                    <div>
+                        <h3>Silver chains</h3>
+                    </div>
+                </center>
+            </div>
+            <div>
+                <img src="{% static 'images/silver2.png' %}" class="itemimg" alt="img">
+                <center>
+                    <div>
+                        <h3>Silver with black Rings</h3>
+                    </div>
+                </center>
+            </div>
+            <div>
+                <img src="{% static 'images/silver3.png' %}" class="itemimg" alt="img">
+                <center>
+                    <div>
+                        <h3>Silver Bracelet</h3>
+                    </div>
+                </center>
+            </div>
+            <div>
+                <img src="{% static 'images/silver4.png' %}" class="itemimg" alt="img">
+                <center>
+                    <div>
+                        <h3>Silver Bangles</h3>
+                    </div>
+                </center>
+            </div>
+            <div>
+                <img src="{% static 'images/silver5.png' %}" class="itemimg" alt="img">
+                <center>
+                    <div>
+                        <h3>Silver Rings</h3>
+                    </div>
+                </center>
+            </div>
+        </div>
+    </section><br><br><br>
+    <section id="diamond"><br>
+        <center>
+            <h1>Diamond</h1>
+        </center>
+        <div class="item">
+
+            <div>
+                <img src="{% static 'images/diamond1.jpg' %}" class="itemimg" alt="img">
+                <center>
+                    <div>
+                        <h3>Diamond chains</h3>
+                    </div>
+                </center>
+            </div>
+            <div>
+                <img src="{% static 'images/diamond2.jpg' %}" class="itemimg" alt="img">
+                <center>
+                    <div>
+                        <h3>Diamond Earings</h3>
+                    </div>
+                </center>
+            </div>
+            <div>
+                <img src="{% static 'images/diamond3.jpg' %}" class="itemimg" alt="img">
+                <center>
+                    <div>
+                        <h3>Diamond Nosepin</h3>
+                    </div>
+                </center>
+            </div>
+            <div>
+                <img src="{% static 'images/diamond4.jpg' %}" class="itemimg" alt="img">
+                <center>
+                    <div>
+                        <h3>Ring</h3>
+                    </div>
+                </center>
+            </div>
+            <div>
+                <img src="{% static 'images/diamond5.jpg' %}" class="itemimg" alt="img">
+                <center>
+                    <div>
+                        <h3>Infinity Diamond Rings</h3>
+                    </div>
+                </center>
+            </div>
+        </div>
+    </section><br><br><br>
+    <section>
+        <table class="tab" border="2" >
+            <tr>
+                <th>Gold Coin <br><marquee>1gm-Rs.8000</marquee></th>
+                <th>Silver Coins<marquee>1gm-Rs.105</marquee></th>
+                <th>Gold Biscuits<marquee>1gm-Rs.10000</marquee></th>
+                <th>Silver Biscuits<marquee>1gm-Rs.155</marquee></th>
+            </tr>
+            <tr>
+                <td><img src="{% static 'images/goldCoin2.png' %}" class="tabimg" alt="img"></td>
+                <td><img src="{% static 'images/silvercoin2.png' %}" class="tabimg" alt="img"></td>
+                <td><img src="{% static 'images/goldbis2.png' %}" class="tabimg" alt="img"></td>
+                <td><img src="{% static 'images/silverbis2.png' %}" class="tabimg" alt="img"></td>
+            </tr>
+            <tr>
+                <td><img src="{% static 'images/goldcoin3.png' %}" class="tabimg" alt="img"></td>
+                <td><img src="{% static 'images/silvercoin3.png' %}" class="tabimg" alt="img"></td>
+                <td><img src="{% static 'images/goldbis3.png' %}" class="tabimg" alt="img"></td>
+                <td><img src="{% static 'images/silverbis3.jpg' %}" class="tabimg" alt="img"></td>
+            </tr>
+            <tr>
+                <td><img src="{% static 'images/goldcoin1.jpg' %}" class="tabimg" alt="img"></td>
+                <td><img src="{% static 'images/silvercoin1.jpg' %}" class="tabimg" alt="img"></td>
+                <td><img src="{% static 'images/goldbis1.jpg' %}" class="tabimg" alt="img"></td>
+                <td><img src="{% static 'images/silverbis1.jpg' %}" class="tabimg" alt="img"></td>
+            </tr>
+            <tr>
+                <td><img src="{% static 'images/goldcoin4.png' %}" class="tabimg" alt="img"></td>
+                <td><img src="{% static 'images/silvercoin4.png' %}" class="tabimg" alt="img"></td>
+                <td><img src="{% static 'images/goldbis4.png' %}" class="tabimg" alt="img"></td>
+                <td><img src="{% static 'images/silverbis4.png' %}" class="tabimg" alt="img"></td>
+            </tr>
+        </table>
+    </section>
+    <section id="contact"><br>
+        <div class="con">
+            <div class="con1"><br>
+                <form method="POST">
+                    <!-- {% csrf_token %} -->
+                    <h1>Contact us</h1>
+                    <label for="name">Name:</label><br><br>
+                    <input type="text" placeholder="Enter your name" style="width: 500px;height: 25px;"><br><br>
+                    <label for="email">Email:</label><br><br>
+                    <input type="email" placeholder="Enter your Email" style="width: 500px;height: 25px;"><br><br>
+                    <label for="review">Message:</label><br><br>
+                    <textarea style="width: 500px;height: 25px;"></textarea><br><br> 
+                    <button type="submit" style="margin-left: 250px;">Submit</button><br><br><br>
+                </form>
+            </div><br><br>
+            <div class="scroll-container">
+                <div class="message-wrapper">
+                    <div class="message">Customer Name:BalaMurugan<br>
+                        <div class="star-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>Review:They have the best collection of jwellery and at reasonable prices. You can also
+                        customise
+                        your jwellery as per your need. They also were very much polite and have a good service too.
+                        Even they delivered the jwellery to me, when I requested them if they could deliver if possible.
+                        Thank you so much. Had a very good experience!!
+                    </div>
+                    <div class="message">Customer Name:Soundarya KS<br>
+                        <div class="star-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>I ordered two rings in COD when the gold price was 3980 per gram, due to lockdown it was
+                        delivered to me after a month at the same 3980 per gram(when I recieved the product price was
+                        4500pergram) this made me to before trust Giriraj for future purchases. Timely response. The
+                        design was same as in the image and persons who received the product were extremely satisfied.
+                    </div>
+                    <div class="message">Customer Name:Sundar<br>
+                        <div class="star-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>Review:Had a very good experience shopping from your site. The chain was awesome and the
+                        price was at par with the current market rates. Thank you Kaansar Golds.
+                    </div>
+                    <div class="message">Customer Name:Anish<br>
+                        <div class="star-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>Review:Best designs are at giriraj jwellers . purity of gold and diamond is too good and
+                        also they believe in customers satisfaction
+                    </div>
+                    <div class="message">Customer Name:Karthikeyan<br>
+                        <div class="star-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>Review:As beautiful as it is shown....soo happy and satisfied to receive it....would love
+                        to be in touch in future as well.... immediate response from the team.... completely trustworthy
+                    </div>
+                    <div class="message">Customer Name:AjithKumar<br>
+                        <div class="star-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>Review:Very Nice Ambitions,Owner Karthikeyan is so humble and many of collections there
+                    </div>
+                    <div class="message">Customer Name:Trisha<br>
+                        <div class="star-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>Review:I was looking for gold pendant which I wanted to gift it to my friend for his
+                        birthday. Then came across giriraj jewellers. Saw that the designs were so nice and elegant.
+                        Then I ordered a pendant online. As I wanted to give surprise to my friend, I wanted to ensure I
+                        get the appropriate details and the quality if the pendant which I ordered. I contacted them for
+                        the details. I was so happy with their exceptional customer service and make it a point to ship
+                        all purchases as quickly as possible for the ultimate satisfaction and convenience of their
+                        shoppers. Also, my friend was so happy looking at the pendant , it was very elegant and same as
+                        expected. If I have to suggest someone about online gold jewellery to order. That would
+                        definitely be Kansaar Golds. Thanks a lot for such wonderful pendant design and the service.
+                    </div>
+                    <div class="message">Customer Name:Vijay<br>
+                        <div class="star-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>Review:This is my first purchase with Giriraj jewellers. I ordered a pair of studs for
+                        myself. The quality is superb and perfect for daily wear. The price of earrings is reasonable as
+                        compared to other jewelers. Will look forward for purchasing more. Kudos to your work and
+                        commitment to delivering quality products.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><br><br><br>
+    <section>
+        <div class="foot">
+            <div>
+                <h2>Corporate Info</h2>
+                <p>About Kaansar Gold</p>
+                <p>Corporate Governance</p>
+                <p>Investor Relationship</p>
+                <p>Management Team</p>
+                <p>Mission and vision</p>
+                <p>News and Media</p>
+            </div>
+            <div>
+                <h2>Let us help you</h2>
+                <p>FAQ</p> 
+                <p>Contact us / Enquiry form</p> 
+                <p>Bangle Size Guide</p> 
+                <p>Ring Size Guide</p> 
+                <p>Why Buy From Us?</p> 
+                <p>Thangamayil Logos</p> 
+            </div>
+            <div>
+                <h2>Policies</h2>
+                <p>Return & Exchange</p>
+                <p>Lifetime Exchange</p>
+                <p>Cancellation Policy</p>
+                <p>Shipping Policy</p>
+                <p>Privacy Policy</p>
+                <p>Digigold data deletion</p>
+            </div>
+            <div>
+                <h2>Information</h2>
+                <p>Disclaimer</p>
+                <p>Terms & Conditions</p>
+                <p>Site Index</p>
+                <p>Store Locator</p>
+                <p>Auspicious Days</p>
+                <p>Blog</p>
+            </div>
+            <div>
+                <h2>Know More</h2>
+                <p>WhatsApp: 9384699886</p>
+                <p>Corporate office: 0452-2565553</p>
+                <p>Shopping : kansaar@gold.com</p>
+                <p>Customer queries : care@Kansaargold.com</p>
+                <p>Palami Center (2nd & 3rd Floor),
+                    Near Ramakrishna Mutt,
+                    25/6, New Natham Road,
+                    Narayanapuram,
+                    Madurai, Tamilnadu 625014</p>
+                
+            </div>
+        </div>
+    </section>
+    <script src="{% static 'js/jewel.js' %}"></script>
+</body>
+
+</html>
